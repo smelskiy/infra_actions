@@ -70,6 +70,6 @@ jobs:
           script: |
             # Выполняет pull образа с DockerHub
             sudo docker pull smelskiy/text
-            # остановка всех контейнеров
+            # Остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 smelskiy/text 
